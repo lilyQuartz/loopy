@@ -15,13 +15,14 @@ function PlayControls(loopy){
 
 	// PAGES & BUTTONS
 
+	/*
 	// PLAY BUTTON's keyboard shortcut
 	// TODO: Toggle back & forth??????
 	subscribe("key/enter",function(){
 		if(Key.control){ // Ctrl-Enter or ⌘-Enter
 			loopy.setMode(Loopy.MODE_PLAY);
 		}
-	});
+	}); */
 
 	// During the Editor
 	(function(){
@@ -32,10 +33,10 @@ function PlayControls(loopy){
 			icon: 0,
 			label: "Play",
 			tooltip: isMacLike ? "⌘-Enter" : "control-enter",
-			onclick: function(){
+			/* onclick: function(){
 				loopy.setMode(Loopy.MODE_PLAY);
 				//self.showPage("Edit");
-			}
+			} */
 		})).dom;
 		buttonDOM.setAttribute("big","yes");
 		buttonDOM.style.fontSize = "28px";
