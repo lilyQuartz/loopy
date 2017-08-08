@@ -268,13 +268,7 @@ function Edge(model, config){
 		// My label is...
 		var s = self.strength;
 		var l;
-		if(s>=3) l="+++";
-		else if(s>=2) l="++";
-		else if(s>=1) l="+";
-		else if(s==0) l="?";
-		else if(s>=-1) l="–"; // EM dash, not hyphen.
-		else if(s>=-2) l="– –";
-		else l="– – –";
+		l="∴";
 		self.label = l;
 
 		// Label position
