@@ -32,8 +32,8 @@ function PlayControls(loopy){
 		var buttonDOM = page.addComponent(new PlayButton({
 			icon: 0,
 			label: "Play",
-			tooltip: isMacLike ? "⌘-Enter" : "control-enter",
-			/* onclick: function(){
+			/* tooltip: isMacLike ? "⌘-Enter" : "control-enter",
+			onclick: function(){
 				loopy.setMode(Loopy.MODE_PLAY);
 				//self.showPage("Edit");
 			} */
@@ -125,7 +125,7 @@ function PlayControls(loopy){
 }
 
 function PlayButton(config){
-
+	/*
 	var self = this;
 
 	var label = "<div class='play_button_icon' icon='"+config.icon+"'></div> "
@@ -139,8 +139,8 @@ function PlayButton(config){
 	if(config.tooltip){
 		self.dom.setAttribute("data-balloon", config.tooltip);
 		self.dom.setAttribute("data-balloon-pos", "top");
-	}
-
+	} 
+	*/
 }
 function PlaySlider(config){
 
