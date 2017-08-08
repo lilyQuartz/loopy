@@ -48,6 +48,7 @@ function Sidebar(loopy){
 				Node.defaultHue = value;
 			}
 		}));
+		/*
 		page.addComponent("init", new ComponentSlider({
 			bg: "initial",
 			label: "Start Amount:",
@@ -56,7 +57,7 @@ function Sidebar(loopy){
 			oninput: function(value){
 				Node.defaultValue = value;
 			}
-		}));
+		})); */
 		page.onedit = function(){
 
 			// Set color of Slider
