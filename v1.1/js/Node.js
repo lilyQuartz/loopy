@@ -210,10 +210,10 @@ function Node(model, config){
 		ctx.textBaseline = "middle";
 		ctx.fillStyle = "#000";
 		var width = ctx.measureText(self.label).width;
-		while(width > r*2){ // -30 for buffer. HACK: HARD-CODED.
+		while(width > r*2 -30){ // -30 for buffer. HACK: HARD-CODED.
 			fontsize -= 1;
 			ctx.font = "normal "+fontsize+"px sans-serif";
-			width = 0.5*ctx.measureText(self.label).width;
+			width = ctx.measureText(self.label).width;
 		} 
 		ctx.fillText(self.label, 0, 0);
 		
@@ -227,9 +227,9 @@ function Node(model, config){
 		_r = (_r+1)/2;
 
 		// Dynamically adjust the radius depending on the text width
-		while(width > self.radius*2 - 30){ // -30 for buffer. HACK: HARD-CODED.
+		while(width > self.radius*2){ // -30 for buffer. HACK: HARD-CODED.
 			width = ctx.measureText(self.label).width;
-			self.radius = ctx.measureText(self.label).width - (2*self.radius);
+			self.radius = 0.5*ctx.measureText(self.label).width;
 		} 
 		
 		// INFINITE RANGE FOR RADIUS
