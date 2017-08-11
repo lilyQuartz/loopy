@@ -79,7 +79,7 @@ function Modal(loopy){
 		label.style.fontSize = "18px";
 		label.style.marginTop = "6px";
 		label.style.color = "#777";
-		label.innerHTML = "need ideas for simulations? check out <span style='text-decoration:underline; cursor:pointer' onclick='publish(\"modal\",[\"examples\"])'>the examples!</span>";
+		label.innerHTML = "";//need ideas for simulations? check out <span style='text-decoration:underline; cursor:pointer' onclick='publish(\"modal\",[\"examples\"])'>the examples!</span>";
 		page.dom.appendChild(label);
 
 		self.addPage("howto", page);
