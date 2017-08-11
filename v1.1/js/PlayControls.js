@@ -109,8 +109,8 @@ function PlayButton(config){
 	var self = this;
 	var label = "" //"<div class='play_button_icon' icon='"+config.icon+"'></div> "
 		    //		+ "<div class='play_button_label'>"+config.label+"</div>";
-	self.dom = _createButton(label, function(){
-		config.onclick();
+	//self.dom = _createButton(label, function(){
+	//	config.onclick();
 	});
 	// Tooltip!
 	if(config.tooltip){
