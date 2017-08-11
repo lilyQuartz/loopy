@@ -64,6 +64,7 @@ function Modal(loopy){
 	})();
 
 	// How To
+	/*
 	(function(){
 		var page = new Page();
 		page.width = 530;
@@ -85,6 +86,7 @@ function Modal(loopy){
 		self.addPage("howto", page);
 
 	})();
+	*/
 
 	// Credits
 	(function(){
