@@ -166,7 +166,7 @@ function Sidebar(loopy){
 		page.addComponent(new ComponentHTML({
 			html: ""+
 			
-			"<b style='font-size:1.4em'>LOOPY</b> (v1.1)<br>a tool for creating simple directed graphs<br><br>"+
+			"<b style='font-size:1.4em'></b> (v1.1)<br>a tool for creating simple directed graphs<br><br>"+
 
 			//"<span class='mini_button' onclick='publish(\"modal\",[\"examples\"])'>see examples</span> "+
 			//"<span class='mini_button' onclick='publish(\"modal\",[\"howto\"])'>how to</span> "+
@@ -175,16 +175,16 @@ function Sidebar(loopy){
 			"<hr/><br>"+
 
 			"<span class='mini_button' onclick='publish(\"modal\",[\"save_link\"])'>save as link</span> <br><br>"+
-			"<span class='mini_button' onclick='publish(\"modal\",[\"save_image\"])'>save as image</span> <br><br>"+
+			//"<span class='mini_button' onclick='publish(\"modal\",[\"save_image\"])'>save as image</span> <br><br>"+
 			//"<span class='mini_button' onclick='publish(\"modal\",[\"embed\"])'>embed in your website</span> <br><br>"+
 			//"<span class='mini_button' onclick='publish(\"modal\",[\"save_gif\"])'>make a GIF using LICEcap</span> <br><br>"+
 
 			"<hr/><br>"+
 				
-			"<a target='_blank' href='../'>LOOPY</a> is "+
-			"made by <a target='_blank' href='http://ncase.me'>nicky case</a> "+
-			"with your support <a target='_blank' href='https://www.patreon.com/ncase'>on patreon</a> &lt;3<br><br>"+
-			"<span style='font-size:0.85em'>P.S: go read <a target='_blank' href='https://www.amazon.com/Thinking-Systems-Donella-H-Meadows/dp/1603580557'>Thinking In Systems</a>, thx</span>"
+			//"<a target='_blank' href='../'>LOOPY</a> is "+
+			//"made by <a target='_blank' href='http://ncase.me'>nicky case</a> "+
+			//"with your support <a target='_blank' href='https://www.patreon.com/ncase'>on patreon</a> &lt;3<br><br>"+
+			//"<span style='font-size:0.85em'>P.S: go read <a target='_blank' href='https://www.amazon.com/Thinking-Systems-Donella-H-Meadows/dp/1603580557'>Thinking In Systems</a>, thx</span>"
 
 		}));
 		self.addPage("Edit", page);
