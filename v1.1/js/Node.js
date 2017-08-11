@@ -209,7 +209,7 @@ function Node(model, config){
 		ctx.textAlign = "center";
 		ctx.textBaseline = "middle";
 		ctx.fillStyle = "#000";
-		var width = 10;//ctx.measureText(self.label).width;
+		var width = ctx.measureText(self.label).width;
 		while(width > r*2 - 30){ // -30 for buffer. HACK: HARD-CODED.
 			fontsize -= 1;
 			ctx.font = "normal "+fontsize+"px sans-serif";
