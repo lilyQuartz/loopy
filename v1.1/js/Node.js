@@ -203,6 +203,20 @@ function Node(model, config){
 		ctx.strokeStyle = color;
 		ctx.stroke();
 		
+		// Text!
+		var fontsize = 40;
+		ctx.font = "normal "+fontsize+"px sans-serif";
+		ctx.textAlign = "center";
+		ctx.textBaseline = "middle";
+		ctx.fillStyle = "#000";
+		var width = 10;//ctx.measureText(self.label).width;
+		while(width > r*2 - 30){ // -30 for buffer. HACK: HARD-CODED.
+			fontsize -= 1;
+			ctx.font = "normal "+fontsize+"px sans-serif";
+			width = ctx.measureText(self.label).width;
+		} 
+		ctx.fillText(self.label, 0, 0);
+		
 		// Circle radius
 		// var _circleRadiusGoto = r*(self.value+1);
 		// _circleRadius = _circleRadius*0.75 + _circleRadiusGoto*0.25;
@@ -237,19 +251,7 @@ function Node(model, config){
 		ctx.fillStyle = color;
 		ctx.fill();
 
-		// Text!
-		var fontsize = 40;
-		ctx.font = "normal "+fontsize+"px sans-serif";
-		ctx.textAlign = "center";
-		ctx.textBaseline = "middle";
-		ctx.fillStyle = "#000";
-		var width = 10;//ctx.measureText(self.label).width;
-		while(width > r*2 - 30){ // -30 for buffer. HACK: HARD-CODED.
-			fontsize -= 1;
-			ctx.font = "normal "+fontsize+"px sans-serif";
-			width = ctx.measureText(self.label).width;
-		} 
-		ctx.fillText(self.label, 0, 0);
+		//WHERE THE TEXT USED TO BE
 
 		// WOBBLE CONTROLS
 		var cl = 40;
