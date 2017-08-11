@@ -166,7 +166,7 @@ function Sidebar(loopy){
 		page.addComponent(new ComponentHTML({
 			html: ""+
 			
-			"<b style='font-size:1.4em'></b> (v1.1)<br>a tool for creating simple directed graphs<br><br>"+
+			"<b style='font-size:1.4em'></b>(v1.1)<br>a tool for creating simple directed graphs<br><br>"+
 
 			//"<span class='mini_button' onclick='publish(\"modal\",[\"examples\"])'>see examples</span> "+
 			//"<span class='mini_button' onclick='publish(\"modal\",[\"howto\"])'>how to</span> "+
