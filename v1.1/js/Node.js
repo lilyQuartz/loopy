@@ -227,6 +227,7 @@ function Node(model, config){
 		_r = (_r+1)/2;
 
 		self.radius += ctx.measureText(self.label).width; //Maybe this will work maybe not
+		self.radius = 100; //Now try this
 		
 		// INFINITE RANGE FOR RADIUS
 		// linear from 0 to 1, asymptotic otherwise.
@@ -244,8 +245,6 @@ function Node(model, config){
 				_value = 1 - (1/self.value)*0.1;
 			}
 		}
-		
-		r = 60;
 
 		// Colored bubble
 		/* ctx.beginPath();
