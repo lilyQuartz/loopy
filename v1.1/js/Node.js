@@ -226,7 +226,10 @@ function Node(model, config){
 		_r = _r/(Math.PI/2);
 		_r = (_r+1)/2;
 
-		self.radius = self.radius + ctx.measureText(self.label).width; //Maybe this will work maybe not
+		while(width > r*2 - 30){ // -30 for buffer. HACK: HARD-CODED.
+			self.radius = self.radius + ctx.measureText(self.label).width;
+		} 
+		 //Maybe this will work maybe not
 		//self.radius = 100; //Now try this, it worked
 		
 		// INFINITE RANGE FOR RADIUS
