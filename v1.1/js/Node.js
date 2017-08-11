@@ -185,6 +185,7 @@ function Node(model, config){
 		// Translate!
 		ctx.save();
 		ctx.translate(x,y+_offset);
+		ctx.scale(0.5,0.5); //THIS IS THE LINE I CHANGED TO TRY OUT SCALING
 		
 		// DRAW HIGHLIGHT???
 		if(self.loopy.sidebar.currentPage.target == self){
