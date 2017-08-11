@@ -17,7 +17,7 @@ Node.defaultHue = 0;
 Node.DEFAULT_RADIUS = 60;
 
 function Node(model, config){
-
+	
 	var self = this;
 	self._CLASS_ = "Node";
 
@@ -185,7 +185,6 @@ function Node(model, config){
 		// Translate!
 		ctx.save();
 		ctx.translate(x,y+_offset);
-		ctx.scale(0.5,0.5); //THIS IS THE LINE I CHANGED TO TRY OUT SCALING
 		
 		// DRAW HIGHLIGHT???
 		if(self.loopy.sidebar.currentPage.target == self){
@@ -211,10 +210,10 @@ function Node(model, config){
 		ctx.textBaseline = "middle";
 		ctx.fillStyle = "#000";
 		var width = ctx.measureText(self.label).width;
-		while(width > r*2 - 30){ // -30 for buffer. HACK: HARD-CODED.
+		while(width > r*2){ // -30 for buffer. HACK: HARD-CODED.
 			fontsize -= 1;
 			ctx.font = "normal "+fontsize+"px sans-serif";
-			width = ctx.measureText(self.label).width;
+			width = 0.5*ctx.measureText(self.label).width;
 		} 
 		ctx.fillText(self.label, 0, 0);
 		
