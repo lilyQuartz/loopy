@@ -227,6 +227,7 @@ function Node(model, config){
 		_r = (_r+1)/2;
 
 		while(width > self.radius*2 - 30){ // -30 for buffer. HACK: HARD-CODED.
+			width = ctx.measureText(self.label).width;
 			self.radius = self.radius + ctx.measureText(self.label).width;
 		} 
 		 //Maybe this will work maybe not
