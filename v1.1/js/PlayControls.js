@@ -32,7 +32,11 @@ function PlayControls(loopy){
 			icon: 0,
 			label: "Play",
 			tooltip: isMacLike ? "⌘-Enter" : "control-enter",
+
 			onclick: function(){
+
+			onclick: function(){
+
 				loopy.setMode(Loopy.MODE_PLAY);
 				//self.showPage("Edit");
 			}
