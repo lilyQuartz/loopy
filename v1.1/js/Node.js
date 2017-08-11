@@ -244,12 +244,13 @@ function Node(model, config){
 		}
 
 		// Colored bubble
-		ctx.beginPath();
+		/* ctx.beginPath();
 		var _circleRadiusGoto = r*_value; // radius
 		_circleRadius = _circleRadius*0.8 + _circleRadiusGoto*0.2;
 		ctx.arc(0, 0, _circleRadius, 0, Math.TAU, false);
 		ctx.fillStyle = color;
 		ctx.fill();
+		*/
 
 		//WHERE THE TEXT USED TO BE
 
