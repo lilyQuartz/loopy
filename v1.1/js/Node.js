@@ -175,7 +175,7 @@ function Node(model, config){
 	};
 
 	// Draw
-	var _circleRadius = 50;
+	var _circleRadius = 0;
 	self.draw = function(ctx){
 
 		// Retina
@@ -246,11 +246,11 @@ function Node(model, config){
 		ctx.textBaseline = "middle";
 		ctx.fillStyle = "#000";
 		var width = 10;//ctx.measureText(self.label).width;
-		while(width > r*2 - 30){ // -30 for buffer. HACK: HARD-CODED.
+		/*while(width > r*2 - 30){ // -30 for buffer. HACK: HARD-CODED.
 			fontsize -= 1;
 			ctx.font = "normal "+fontsize+"px sans-serif";
-			//width = ctx.measureText(self.label).width;
-		}
+			width = ctx.measureText(self.label).width;
+		} */
 		ctx.fillText(self.label, 0, 0);
 
 		// WOBBLE CONTROLS
