@@ -1,4 +1,4 @@
-### [A tool for creating directed graphs.](https://lilyquartz.github.io/loopy/v1.1/)
+### [A tool for creating simple directed graphs.](https://lilyquartz.github.io/simpleDirectedGraph/v1.1/)
 
 [Zero Rights Reserved](http://creativecommons.org/publicdomain/zero/1.0/): 
 Entirely open source/public domain.
