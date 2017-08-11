@@ -176,20 +176,6 @@ function Node(model, config){
 	var _circleRadius = 0;
 	self.draw = function(ctx){
 
-		// Text!
-		var fontsize = 40;
-		ctx.font = "normal "+fontsize+"px sans-serif";
-		ctx.textAlign = "center";
-		ctx.textBaseline = "middle";
-		ctx.fillStyle = "#000";
-		var width = 10;//ctx.measureText(self.label).width;
-		while(width > r*2 - 30){ // -30 for buffer. HACK: HARD-CODED.
-			fontsize -= 1;
-			ctx.font = "normal "+fontsize+"px sans-serif";
-			width = ctx.measureText(self.label).width;
-		} 
-		ctx.fillText(self.label, 0, 0);
-		
 		// Retina
 		var x = self.x*2;
 		var y = self.y*2;
@@ -251,7 +237,19 @@ function Node(model, config){
 		ctx.fillStyle = color;
 		ctx.fill();
 
-		//TEXT USED TO BE HERE
+		// Text!
+		var fontsize = 40;
+		ctx.font = "normal "+fontsize+"px sans-serif";
+		ctx.textAlign = "center";
+		ctx.textBaseline = "middle";
+		ctx.fillStyle = "#000";
+		var width = 10;//ctx.measureText(self.label).width;
+		while(width > r*2 - 30){ // -30 for buffer. HACK: HARD-CODED.
+			fontsize -= 1;
+			ctx.font = "normal "+fontsize+"px sans-serif";
+			width = ctx.measureText(self.label).width;
+		} 
+		ctx.fillText(self.label, 0, 0);
 
 		// WOBBLE CONTROLS
 		var cl = 40;
