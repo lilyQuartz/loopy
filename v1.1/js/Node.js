@@ -175,7 +175,7 @@ function Node(model, config){
 	};
 
 	// Draw
-	var _circleRadius = 0;
+	var _circleRadius = 50;
 	self.draw = function(ctx){
 
 		// Retina
