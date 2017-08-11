@@ -184,9 +184,7 @@ function Sidebar(loopy){
 			//"<a target='_blank' href='../'>Simple Directed Graph</a> is "+
 			//"made by <a target='_blank' href='http://lilyquartz.github.io'>lilyQuartz github</a> "+
 			//"with your support <a target='_blank' href='https://www.patreon.com/ncase'>on patreon</a> &lt;3<br><br>"+
-			"<span style='font-size:0.85em'>
-			//P.S: go read <a target='_blank' href='https://www.amazon.com/Thinking-Systems-Donella-H-Meadows/dp/1603580557'>Thinking In Systems</a>, thx
-			</span>"
+			"<span style='font-size:0.85em'>Here is a link to the <a target='_blank' href='https://github.com/lilyQuartz/simpleDirectedGraph'>Github Repo</a> containing all of the code for this app.</span>"
 
 		}));
 		self.addPage("Edit", page);
