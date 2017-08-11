@@ -91,6 +91,7 @@ function Sidebar(loopy){
 				self.showPage("Edit");
 			}
 		}));
+		/*
 		page.addComponent("strength", new ComponentSlider({
 			bg: "strength",
 			label: "<br><br>Relationship:",
@@ -104,6 +105,7 @@ function Sidebar(loopy){
 			html: "(to make a stronger relationship, draw multiple arrows!)<br><br>"+
 			"(to make a delayed relationship, draw longer arrows)"
 		}));
+		*/
 		page.addComponent(new ComponentButton({
 			//label: "delete edge",
 			label: "delete arrow",
