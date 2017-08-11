@@ -22,6 +22,7 @@ function PlayControls(loopy){
 		}
 	}); */
 	// During the Editor
+	/*
 	(function(){
 		var page = new Page();
 		// PLAY BUTTON
@@ -39,6 +40,7 @@ function PlayControls(loopy){
 		buttonDOM.style.height = "35px";
 		self.addPage("Editor", page);
 	})();
+	*/
 	// During the Player
 	(function(){
 		var page = new Page();
