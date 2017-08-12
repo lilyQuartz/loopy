@@ -26,10 +26,10 @@ function PlayControls(loopy){
 		// PLAY BUTTON
 		var buttonDOM = page.addComponent(new PlayButton({
 			icon: 0,
-			label: "Play",
+			label: "Zoom",
 			tooltip: isMacLike ? "⌘-Enter" : "control-enter",
 			onclick: function(){
-				loopy.setMode(Loopy.MODE_PLAY);
+				//loopy.setMode(Loopy.MODE_PLAY);
 				//self.showPage("Edit");
 			}
 		})).dom;
