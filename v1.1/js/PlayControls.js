@@ -15,23 +15,23 @@ function PlayControls(loopy){
 
 	// PLAY BUTTON's keyboard shortcut
 	// TODO: Toggle back & forth??????
-	/*
+	
 	subscribe("key/enter",function(){
 		if(Key.control){ // Ctrl-Enter or ⌘-Enter
 			loopy.setMode(Loopy.MODE_PLAY);
 		}
-	}); */
+	}); 
 	// During the Editor
-	/*
+	
 	(function(){
 		var page = new Page();
 		// PLAY BUTTON
 		var buttonDOM = page.addComponent(new PlayButton({
 			icon: 0,
-			label: "Play",
+			label: "Zoom",
 			tooltip: isMacLike ? "⌘-Enter" : "control-enter",
 			onclick: function(){
-				loopy.setMode(Loopy.MODE_PLAY);
+				//loopy.setMode(Loopy.MODE_PLAY);
 				//self.showPage("Edit");
 			}
 		})).dom;
@@ -40,7 +40,7 @@ function PlayControls(loopy){
 		buttonDOM.style.height = "35px";
 		self.addPage("Editor", page);
 	})();
-	*/
+	
 	// During the Player
 	(function(){
 		var page = new Page();
