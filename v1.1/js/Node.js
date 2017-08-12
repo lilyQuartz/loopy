@@ -236,7 +236,7 @@ function Node(model, config){
 		// Dynamically adjust the radius depending on the text width
 		while(width > self.radius*2 - 30){ // -30 for buffer. HACK: HARD-CODED.
 			width = ctx.measureText(self.label).width;
-			self.radius = ctx.measureText(self.label).width - (2*self.radius);
+			self.radius = 1.5*self.radius;//ctx.measureText(self.label).width - (2*self.radius);
 		} 
 		
 		// INFINITE RANGE FOR RADIUS
