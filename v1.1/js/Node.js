@@ -226,6 +226,13 @@ function Node(model, config){
 		_r = _r/(Math.PI/2);
 		_r = (_r+1)/2;
 
+		//Try to make a key press to zoom out the nodes
+		subscribe("key/enter",function(){
+			if(Key.control){ // Ctrl-Enter or ⌘-Enter
+				0.5*width;
+			}
+		}); 
+		
 		// Dynamically adjust the radius depending on the text width
 		while(width > self.radius*2 - 30){ // -30 for buffer. HACK: HARD-CODED.
 			width = ctx.measureText(self.label).width;
