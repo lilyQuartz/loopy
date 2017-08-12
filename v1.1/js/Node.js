@@ -225,18 +225,11 @@ function Node(model, config){
 		var _r = Math.atan(self.value*5);
 		_r = _r/(Math.PI/2);
 		_r = (_r+1)/2;
-
-		//Try to make a key press to zoom out the nodes
-		subscribe("key/enter",function(){
-			if(Key.control){ // Ctrl-Enter or ⌘-Enter
-				0.5*width;
-			}
-		}); 
 		
 		// Dynamically adjust the radius depending on the text width
 		while(width > self.radius*2){ // -30 for buffer. HACK: HARD-CODED.
 			width = ctx.measureText(self.label).width;
-			self.radius = 1.2*self.radius;//ctx.measureText(self.label).width - (2*self.radius);
+			self.radius = 1.05*self.radius;//ctx.measureText(self.label).width - (2*self.radius);
 		} 
 		
 		// INFINITE RANGE FOR RADIUS
@@ -255,6 +248,13 @@ function Node(model, config){
 				_value = 1 - (1/self.value)*0.1;
 			}
 		}
+		
+		//Try to make a key press to zoom out the nodes
+		subscribe("key/enter",function(){
+			if(Key.control){ // Ctrl-Enter or ⌘-Enter
+				0.5*width;
+			}
+		}); 
 
 		// Colored bubble
 		/* ctx.beginPath();
