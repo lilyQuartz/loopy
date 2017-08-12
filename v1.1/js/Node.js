@@ -172,6 +172,7 @@ function Node(model, config){
 
 	};
 
+	/*
 	//Zoom Button, Experimental
 	//var fontsize = 40;
 	
@@ -209,6 +210,7 @@ function Node(model, config){
 	self.dom = _createButton(label, function(){
 		config.onclick();
 	});
+	*/
 	
 	// Draw
 	var _circleRadius = 0;
