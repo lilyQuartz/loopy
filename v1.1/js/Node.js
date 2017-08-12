@@ -248,13 +248,6 @@ function Node(model, config){
 				_value = 1 - (1/self.value)*0.1;
 			}
 		}
-		
-		//Try to make a key press to zoom out the nodes
-		subscribe("key/enter",function(){
-			if(Key.control){ // Ctrl-Enter or ⌘-Enter
-				0.5*width;
-			}
-		}); 
 
 		// Colored bubble
 		/* ctx.beginPath();
