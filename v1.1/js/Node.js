@@ -173,14 +173,14 @@ function Node(model, config){
 	};
 
 	//Zoom Button, Experimental
-	var fontsize = 40;
+	//var fontsize = 40;
 	
 	// PLAY BUTTON's keyboard shortcut
 	// TODO: Toggle back & forth??????
 	subscribe("key/enter",function(){
 		if(Key.control){ // Ctrl-Enter or ⌘-Enter
 			//loopy.setMode(Loopy.MODE_PLAY);
-			fontsize = fontsize - 10;
+			//fontsize = fontsize - 10;
 		}
 	}); 
 	// During the Editor
@@ -194,7 +194,7 @@ function Node(model, config){
 			onclick: function(){
 				//loopy.setMode(Loopy.MODE_PLAY);
 				//self.showPage("Edit");
-				fontsize = fontsize - 10;
+				//fontsize = fontsize - 10;
 			}
 		})).dom;
 		buttonDOM.setAttribute("big","yes");
@@ -242,7 +242,7 @@ function Node(model, config){
 		ctx.stroke();
 		
 		// Text!
-		//var fontsize = 40; //FONTSIZE USED TO BE HERE
+		var fontsize = 40; //FONTSIZE USED TO BE HERE
 		ctx.font = "normal "+fontsize+"px sans-serif";
 		ctx.textAlign = "center";
 		ctx.textBaseline = "middle";
